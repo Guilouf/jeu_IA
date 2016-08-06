@@ -3,7 +3,7 @@ import sys
 import time
 
 from PyQt4 import QtGui, QtCore
-from pinceau import Pinceau
+#from pinceau import Pinceau
 
 """
 Decriptif du jeu: avoir une map 2D carrée avec des points qui se déplacent, les points noirs sont des humains, qui sont
@@ -86,7 +86,7 @@ class Widget(QtGui.QWidget):  # là ou on trace les trucs
 
     def paintEvent(self, e):  # surcharge
 
-        qp2 = Pinceau(self)
+        #qp2 = Pinceau(self)
         qp = QtGui.QPainter()
         qp.begin(self)
         color = QtGui.QColor(0, 0, 0)
